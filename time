@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int seconds;
+    int minutes;
+    int hours;
+    cout<<"enter seconds (in 2 digit format) :\t";
+    cin>>seconds;
+   
+    cout<<"enter minutes (in 2 digit format ) :\t "; 
+    cin>>minutes;
+    cout<< "enter hours (in 2 digit format ) :\t";
+    cin>>hours;
+    
+   { if(seconds>60)
+    cout<<"invalid seconds input\n"<<endl;
+    if(minutes>60)
+    cout<<"invalid minutes input\n"<<endl;
+    if(hours>12)
+    cout<<"invalid hours input\n"<<endl;
+    
+       
+   }
+    cout<<"The time is :\t"<<hours<<":"<<minutes<<":"<<seconds;
+    
+
+    return 0;
+}
